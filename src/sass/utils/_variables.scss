@@ -1,0 +1,19 @@
+:root {
+  //  colors
+  --primary-text-color: #2e2520;
+  --secondary-text-color: #000000;
+  --primary-bgr-color: #fef3e4;
+  --secondary-bgr-color: #ffffff;
+  --modal-bgr-color: #fffff9;
+  --modal-primary-color: #ab816c;
+  --modal-secondary-color: #ab816c80;
+
+  // shadows
+  --shadow-circle: 0px 4px 4px 0px #ab816c40;
+  --shadow-modal-first: 4px 4px 4px 0px #ab816c26;
+  --shadow-modal-second: -4px -4px 4px 0px #ab816c26;
+
+  // fonts
+  --primary-font: Montserrat;
+  --title-font: Caveat Brush;
+}
