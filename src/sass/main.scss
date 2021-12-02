@@ -3,9 +3,9 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
 // Миксины
 @import './utils/mixins';
 // Переменные
 @import './utils/variables';
+// Общие стили
+@import './utils/comon-styles';
