@@ -44,5 +44,11 @@
 <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 19">
   <path d="M9.524 1.082a.5.5 0 0 1 .952 0l1.518 4.673a1.5 1.5 0 0 0 1.427 1.037h4.914a.5.5 0 0 1 .294.904l-3.976 2.889a1.5 1.5 0 0 0-.545 1.677l1.519 4.674a.5.5 0 0 1-.77.559l-3.975-2.889a1.5 1.5 0 0 0-1.764 0l-3.975 2.889a.5.5 0 0 1-.77-.56l1.519-4.673a1.5 1.5 0 0 0-.545-1.677L1.37 7.696a.5.5 0 0 1 .294-.904h4.914a1.5 1.5 0 0 0 1.427-1.037l1.518-4.673Z" stroke="#AB816C"/>
 </svg>
+<svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="30" height="2" rx="1" fill="#2E2520"/>
+<rect y="7" width="30" height="2" rx="1" fill="#2E2520"/>
+<rect y="14" width="30" height="2" rx="1" fill="#2E2520"/>
+</svg>
+
 </defs>
 </svg>
