@@ -38,7 +38,7 @@ img {
 /* Основные стили страницы */
 
 .container {
-  max-width: 480px;
+  max-width: 320px;
 
   padding-left: 15px;
   padding-right: 15px;
@@ -53,4 +53,28 @@ img {
   @include mq(desktop) {
     max-width: 1200px;
   }
+}
+
+body {
+  background-color: var(--secondary-bgr-color);
+}
+
+.background-top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.background-bot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  @include mq(mobile) {
+    bottom: 216px;
+  }
+}
+
+body > picture > img {
+  width: 100%;
 }
