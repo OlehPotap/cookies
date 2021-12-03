@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+:root {
+  --primary-text-color: #2e2520;
+  --secondary-text-color: #000000;
+  --primary-bgr-color: #fef3e4;
+  --secondary-bgr-color: #ffffff;
+  --modal-bgr-color: #fffff9;
+  --modal-primary-color: #ab816c;
+  --modal-secondary-color: #ab816c80;
+  --shadow-circle: 0px 4px 4px 0px #ab816c40;
+  --shadow-modal-first: 4px 4px 4px 0px #ab816c26;
+  --shadow-modal-second: -4px -4px 4px 0px #ab816c26;
+  --primary-font: Montserrat;
+  --title-font: Caveat Brush;
+}
+
+/* Убираем внутренние отступы */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+/* Удаляем стандартные стили списков*/
+ul {
+  list-style: none;
+}
+
+/* Убираем лишние стили ссылок */
+a {
+  text-decoration: none;
+}
+
+/* Общие стили заголовков */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Основные стили страницы */
+.container {
+  max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
