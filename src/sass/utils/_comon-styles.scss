@@ -57,24 +57,38 @@ img {
 
 body {
   background-color: var(--secondary-bgr-color);
-}
 
-.background-top {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
+  background: url(../images/PNG/body-bg/mobile-bot.png) no-repeat bottom,
+    url(../images/PNG/body-bg/mobile-top.png) no-repeat top;
+  background-size: cover auto;
 
-.background-bot {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-
-  @include mq(mobile) {
-    bottom: 216px;
+  @include mq(retina) {
+    background: url(../images/PNG/body-bg/mobile-bot@2x.png) no-repeat bottom,
+      url(../images/PNG/body-bg/mobile-top@2x.png) no-repeat top;
+    background-size: cover auto;
   }
-}
 
-body > picture > img {
-  width: 100%;
+  @include mq(tablet) {
+    background: url(../images/PNG/body-bg/tablet-bot.png) no-repeat bottom,
+      url(../images/PNG/body-bg/tablet-top.png) no-repeat top;
+    background-size: cover auto;
+
+    @include mq(retina) {
+      background: url(../images/PNG/body-bg/tablet-bot@2x.png) no-repeat bottom,
+        url(../images/PNG/body-bg/tablet-top@2x.png) no-repeat top;
+      background-size: cover auto;
+    }
+  }
+
+  @include mq(desktop) {
+    background: url(../images/PNG/body-bg/desktop-bot.png) no-repeat bottom,
+      url(../images/PNG/body-bg/desktop-top.png) no-repeat top;
+    background-size: cover auto;
+
+    @include mq(retina) {
+      background: url(../images/PNG/body-bg/desktop-bot@2x.png) no-repeat bottom,
+        url(../images/PNG/body-bg/desktop-top@2x.png) no-repeat top;
+      background-size: cover auto;
+    }
+  }
 }
