@@ -17,12 +17,65 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+
+    <style type="text/css">
+      body {
+        background-color: var(--secondary-bgr-color);
+      }
+
+      .top {
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      .bot {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+
+      body > picture > img {
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <header>а что собственно не так?</header>
+    <picture class="background-top">
+      <source
+        media="(min-width: 1280px)"
+        srcset="./images/PNG/body-bg/desktop-top.png 1x, ./images/PNG/body-bg/desktop-top@2x.png 2x"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/PNG/body-bg/tablet-top.png 1x, ./images/PNG/body-bg/tablet-top@2x.png 2x"
+      />
+      <img
+        srcset="./images/PNG/body-bg/mobile-bot.png 1x, ./images/PNG/body-bg/mobile-bot@2x.png 2x"
+        src="./images/PNG/body-bg/mobile-bot.png"
+        alt="background"
+      />
+    </picture>
+
+    <picture class="background-bot">
+      <source
+        media="(min-width: 1280px)"
+        srcset="./images/PNG/body-bg/desktop-bot.png 1x, ./images/PNG/body-bg/desktop-bot@2x.png 2x"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/PNG/body-bg/tablet-bot.png 1x, ./images/PNG/body-bg/tablet-bot@2x.png 2x"
+      />
+      <img
+        srcset="./images/PNG/body-bg/mobile-top.png 1x, ./images/PNG/body-bg/mobile-top@2x.png 2x"
+        src="./images/PNG/body-bg/mobile-top.png"
+        alt="background"
+      />
+    </picture>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/menu.html"></include>
     <include src="./partials/about-us.html"></include>
+    <!-- <include src="./partials/reviews.html"></include> -->
     <include src="./partials/form.html"></include>
     <include src="./partials/contact.html"></include>
     <include src="./partials/footer.html"></include>
