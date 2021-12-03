@@ -41,39 +41,8 @@
     </style>
   </head>
   <body>
-    <picture class="background-top">
-      <source
-        media="(min-width: 1280px)"
-        srcset="./images/PNG/body-bg/desktop-top.png 1x, ./images/PNG/body-bg/desktop-top@2x.png 2x"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="./images/PNG/body-bg/tablet-top.png 1x, ./images/PNG/body-bg/tablet-top@2x.png 2x"
-      />
-      <img
-        srcset="./images/PNG/body-bg/mobile-bot.png 1x, ./images/PNG/body-bg/mobile-bot@2x.png 2x"
-        src="./images/PNG/body-bg/mobile-bot.png"
-        alt="background"
-      />
-    </picture>
-
-    <picture class="background-bot">
-      <source
-        media="(min-width: 1280px)"
-        srcset="./images/PNG/body-bg/desktop-bot.png 1x, ./images/PNG/body-bg/desktop-bot@2x.png 2x"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="./images/PNG/body-bg/tablet-bot.png 1x, ./images/PNG/body-bg/tablet-bot@2x.png 2x"
-      />
-      <img
-        srcset="./images/PNG/body-bg/mobile-top.png 1x, ./images/PNG/body-bg/mobile-top@2x.png 2x"
-        src="./images/PNG/body-bg/mobile-top.png"
-        alt="background"
-      />
-    </picture>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/menu.html"></include>
+    <include src="./partials/menu-mobile.html"></include>
     <include src="./partials/about-us.html"></include>
     <include src="./partials/reviews.html"></include>
     <include src="./partials/form.html"></include>
@@ -81,6 +50,8 @@
     <include src="./partials/footer.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
   </body>
 </html>
