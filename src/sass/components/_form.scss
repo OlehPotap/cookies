@@ -14,14 +14,21 @@
   background-color: var(--modal-bgr-color);
 
   @include mq(tablet) {
+    width: 634px;
+
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
     padding: 35px 21px 35px 30px;
-    margin: 0 50px 27px 50px;
+    margin: 0 auto 27px auto;
 
     border-radius: 150px;
+  }
+
+  @include mq(desktop) {
+    width: 822px;
+    margin: 0 auto 27px auto;
   }
 
   &__heading {
@@ -162,5 +169,9 @@
 
   @include mq(tablet) {
     margin-right: 0;
+  }
+
+  @include mq(desktop) {
+    margin-left: 0;
   }
 }
