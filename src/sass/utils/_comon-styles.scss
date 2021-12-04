@@ -115,4 +115,9 @@ body {
   padding: 0;
   margin: 0;
   border: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
 }
