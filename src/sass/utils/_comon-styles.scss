@@ -60,35 +60,35 @@ body {
 
   background: url(../images/PNG/body-bg/mobile-bot.png) no-repeat bottom,
     url(../images/PNG/body-bg/mobile-top.png) no-repeat top;
-  background-size: cover auto;
+  background-size: auto;
 
   @include mq(retina) {
     background: url(../images/PNG/body-bg/mobile-bot@2x.png) no-repeat bottom,
       url(../images/PNG/body-bg/mobile-top@2x.png) no-repeat top;
-    background-size: cover auto;
+    background-size: auto;
   }
 
   @include mq(tablet) {
     background: url(../images/PNG/body-bg/tablet-bot.png) no-repeat bottom,
       url(../images/PNG/body-bg/tablet-top.png) no-repeat top;
-    background-size: cover auto;
+    background-size: auto;
 
     @include mq(retina) {
       background: url(../images/PNG/body-bg/tablet-bot@2x.png) no-repeat bottom,
         url(../images/PNG/body-bg/tablet-top@2x.png) no-repeat top;
-      background-size: cover auto;
+      background-size: auto;
     }
   }
 
   @include mq(desktop) {
     background: url(../images/PNG/body-bg/desktop-bot.png) no-repeat bottom,
       url(../images/PNG/body-bg/desktop-top.png) no-repeat top;
-    background-size: cover auto;
+    background-size: auto;
 
     @include mq(retina) {
       background: url(../images/PNG/body-bg/desktop-bot@2x.png) no-repeat bottom,
         url(../images/PNG/body-bg/desktop-top@2x.png) no-repeat top;
-      background-size: cover auto;
+      background-size: auto;
     }
   }
 }
