@@ -1,16 +1,19 @@
-.h2__about-us
-{
-    font-family: var(--title-font);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 65px;
-    letter-spacing: 0em;
-    text-align: center;
-
+.h2__about-us {
+  font-family: var(--title-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: center;
+  @include mq(tablet) {
+    text-align: left;
+    margin-bottom: 10px;
+  }
 }
-.p__about-us
-{
+.p__about-us {
+    margin-bottom: 18px;
+  @include mq(tablet) {
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
@@ -18,18 +21,54 @@
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
+    
+  }
+  @include mq(desktop) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
 
+    color: #2e2520;
+    width: 392px;
+  }
+  &__lastchild
+  {
+      margin-bottom: 0; 
+     }
 }
-.button__about-us
+.button__about-us {
+  border: none;
+  outline: 0;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 3.61;
+  text-align: center;
+  @include mq(desktop)
+  {
+      display: none;
+  }
+}
+.about-us__wrapper {
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+.about-us__pictures {
+  display: contents;
+}
+.about-us__text
 {
-    border:none;
-    outline: 0;
-    background-color: #fff;
-    cursor: pointer;
-    font-family: Caveat Brush;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 3.61;
-text-align: center;
+    @include mq(tablet)
+    {
+        margin-left: 24px;
+    }
+    @include mq(desktop){
+    margin-left: 76px;}
 }
