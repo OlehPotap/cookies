@@ -36,9 +36,20 @@
   &__lastchild
   {
       margin-bottom: 0; 
-     }
+}
+
+}
+.about_us__none-txt
+{
+
+    display: none;
+  @include mq(desktop)
+  {
+    display: block;
+  }
 }
 .button__about-us {
+  display: block;
   border: none;
   outline: 0;
   background-color: #fff;
@@ -57,11 +68,20 @@
 .about-us__wrapper {
   @include mq(tablet) {
     display: flex;
+    align-items: self-start;
+  }
+  @include mq(desktop)
+  {
     align-items: center;
   }
 }
 .about-us__pictures {
   display: contents;
+  @include mq(tablet)
+  {
+    height: 546px;
+    width: 512px;
+  }
 }
 .about-us__text
 {
@@ -72,3 +92,11 @@
     @include mq(desktop){
     margin-left: 76px;}
 }
+.dots
+{
+  @include mq(desktop)
+  {
+    display: none;
+  }
+}
+//
