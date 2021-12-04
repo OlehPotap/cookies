@@ -10,4 +10,9 @@
 
 // Общие стили
 @import './utils/comon-styles';
-
+//Стили мобильного меню
+@import './components/menu-mobile.scss';
+// Стили сеции About us
+@import './components/about-us';
+// Стили футера
+@import './components/footer';
