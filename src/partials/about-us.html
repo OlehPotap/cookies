@@ -28,15 +28,43 @@
         <p class="p__about-us">
           Eva has been baking since she was six years old and over the last 49 years, she has
           created hundreds of cakes for weddings and has baked for many celebrities. Eva and our
-          shop have received multiple awards & recognition for excellence.
+          shop have received multiple awards & recognition for excellence.<span class="dots" id="dots"></span>
         </p>
 
-        <p class="p__about-us p__about-us__lastchild">
+        <p class="p__about-us p__about-us__lastchild about_us__none-txt">
           We are going to teach you how to cook with passion and sparkles in your eyes! We love what
           we do and believe you will enjoy our cooking atmosphere!
         </p>
-        <button class="button__about-us">read more</button>
+
+        <p class="p__about-us p__about-us__lastchild" id="more">
+          We are going to teach you how to cook with passion and sparkles in your eyes! We love what
+          we do and believe you will enjoy our cooking atmosphere!
+        </p>
+        <button  class="button__about-us" button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </section>
+
+
+
+
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "less"; 
+    moreText.style.display = "inline";
+  }
+  
+}
+</script>
