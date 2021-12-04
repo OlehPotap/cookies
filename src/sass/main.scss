@@ -3,5 +3,20 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+// ===============Утилиты======================
+// Миксины
+@import './utils/mixins';
+// Переменные
+@import './utils/variables';
+// Общие стили
+@import './utils/comon-styles';
+
+// ============Стили страницы==================
+//Стили мобильного меню
+@import './components/menu-mobile.scss';
+// Стили сеции About us
+@import './components/about-us';
+//Стили формы регистрации
+@import './components/form';
+// Стили футера
+@import './components/footer';

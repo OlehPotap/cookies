@@ -1,0 +1,123 @@
+/* Убираем внутренние отступы */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+/* Удаляем стандартные стили списков*/
+ul {
+  list-style: none;
+}
+
+/* Убираем лишние стили ссылок */
+a {
+  text-decoration: none;
+}
+
+/* Общие стили заголовков */
+
+// Общие стили картинок
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Основные стили страницы */
+
+.container {
+  max-width: 320px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(tablet) {
+    max-width: 768px;
+  }
+
+  @include mq(desktop) {
+    max-width: 1280px;
+  }
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--primary-text-color);
+
+  background-color: var(--secondary-bgr-color);
+
+  background: url(../images/PNG/body-bg/mobile-bot.png) no-repeat bottom,
+    url(../images/PNG/body-bg/mobile-top.png) no-repeat top;
+  background-size: 100%;
+
+  @include mq(retina) {
+    background: url(../images/PNG/body-bg/mobile-bot@2x.png) no-repeat bottom,
+      url(../images/PNG/body-bg/mobile-top@2x.png) no-repeat top;
+    background-size: 100%;
+  }
+
+  @include mq(tablet) {
+    background: url(../images/PNG/body-bg/tablet-bot.png) no-repeat bottom,
+      url(../images/PNG/body-bg/tablet-top.png) no-repeat top;
+    background-size: 100%;
+
+    @include mq(retina) {
+      background: url(../images/PNG/body-bg/tablet-bot@2x.png) no-repeat bottom,
+        url(../images/PNG/body-bg/tablet-top@2x.png) no-repeat top;
+      background-size: 100%;
+    }
+  }
+
+  @include mq(desktop) {
+    background: url(../images/PNG/body-bg/desktop-bot.png) no-repeat bottom,
+      url(../images/PNG/body-bg/desktop-top.png) no-repeat top;
+    background-size: 100%;
+
+    @include mq(retina) {
+      background: url(../images/PNG/body-bg/desktop-bot@2x.png) no-repeat bottom,
+        url(../images/PNG/body-bg/desktop-top@2x.png) no-repeat top;
+      background-size: 100%;
+    }
+  }
+}
+
+.button {
+  width: 145px;
+  height: 40px;
+
+  background-color: var(--modal-primary-color);
+
+  border-radius: 25px;
+
+  color: var(--secondary-bgr-color);
+
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+
+  padding: 0;
+  margin: 0;
+  border: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
+}
