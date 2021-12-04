@@ -15,6 +15,14 @@
     width: 19px;
     height: 15px;
     fill: var(--primary-text-color);
+
+    @include mq (tablet){
+    width:19px;
+    height: 15px;}
+     
+    @include mq (desktop){
+    width:24px;
+    height: 19px;}
 }
 
 }
