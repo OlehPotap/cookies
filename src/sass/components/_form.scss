@@ -101,9 +101,8 @@
   flex-direction: column;
 
   @include mq(tablet) {
-    width: 294px;
-    padding: 21px 30px;
-    border-left: 1px solid rgba(171, 129, 108, 0.5);
+    flex-direction: row;
+    align-items: center;
   }
 
   &__heading {
@@ -173,5 +172,16 @@
 
   @include mq(desktop) {
     margin-left: 0;
+  }
+}
+
+.form-inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include mq(tablet) {
+    width: 294px;
+    padding: 21px 30px;
+    border-left: 1px solid rgba(171, 129, 108, 0.5);
   }
 }
