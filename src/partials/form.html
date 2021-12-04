@@ -1,15 +1,44 @@
 <!-- тут будет форма -->
-<div class="form-registration">
-  <h2>Registration</h2>
-  <p>May 23, 11:00 New York</p>
-  <p>$ 699</p>
-  <form>
-    <p>Apply your personal info for registration</p>
-    <label for="name"><input type="text" name="name" id="name" placeholder="Your name" /></label>
-    <label for="phone"
-      ><input type="tel" name="phone" id="phone" placeholder="Phone number"
-    /></label>
-    <label for="email"><input type="email" name="email" id="email" placeholder="Email" /></label>
-  </form>
-  <button type="submit">Register</button>
-</div>
+<section class="registration">
+  <div class="container">
+    <div class="registration-wrapper">
+      <h2 class="registration-wrapper__heading">Registration</h2>
+      <p class="registration-wrapper__when">
+        May 23, 11:00 <br />
+        New York
+      </p>
+      <p class="registration-wrapper__cost">$ 699</p>
+      <div class="underline"></div>
+      <form class="registration-form">
+        <p class="registration-form__heading">Apply your personal info for registration</p>
+        <label for="name">
+          <input
+            class="registration-form__input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name"
+          />
+        </label>
+        <label for="phone"
+          ><input
+            class="registration-form__input"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Phone number"
+        /></label>
+        <label for="email">
+          <input
+            class="registration-form__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+          />
+        </label>
+      </form>
+      <button class="submit-button button" type="submit">Register</button>
+    </div>
+  </div>
+</section>

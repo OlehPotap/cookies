@@ -56,6 +56,9 @@ img {
 }
 
 body {
+  font-family: var(--primary-font);
+  color: var(--primary-text-color);
+
   background-color: var(--secondary-bgr-color);
 
   background: url(../images/PNG/body-bg/mobile-bot.png) no-repeat bottom,
@@ -91,4 +94,25 @@ body {
       background-size: auto;
     }
   }
+}
+
+.button {
+  width: 145px;
+  height: 40px;
+
+  background-color: var(--modal-primary-color);
+
+  border-radius: 25px;
+
+  color: var(--secondary-bgr-color);
+
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+
+  padding: 0;
+  margin: 0;
+  border: transparent;
 }
