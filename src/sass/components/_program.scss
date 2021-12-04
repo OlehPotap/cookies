@@ -1,0 +1,69 @@
+.section {
+    padding-top   : 38px;
+    padding-bottom: 38px;
+}
+
+.title--primary,
+.card__title {
+    margin        : 0 auto;
+    font-family   : var(--title-font), sans-serif;
+    font-weight   : $fw;
+    font-size     : 24px;
+    line-height   : 2.71;
+    letter-spacing: $ls;
+    text-align    : center;
+
+    color: var(--primary-text-color);
+}
+
+.list__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.list__item,
+.list__text,
+.card__text {
+    font-family: var(--primary-font);
+    font-weight: $fw;
+    font-size  : 16px;
+    line-height: 1.25;
+
+    color: var(--primary-text-color);
+}
+
+.list__text--upper {
+    margin-bottom: 10px;
+    margin-top   : 0;
+}
+
+.list__text--lower {
+    margin-top   : 10px;
+    margin-bottom: 0;
+}
+
+.card {
+    display       : flex;
+    flex-direction: column;
+    flex-basis    : 142px;
+    padding       : 0 auto;
+
+    &__title {
+        font-size    : 18px;
+        line-height  : 1.25;
+        margin-bottom: 13px;
+    }
+
+    &__text {
+        font-size    : 14px;
+        line-height  : 1.21;
+        margin-bottom: 13px;
+    }
+
+    &__svg {
+        margin-bottom: 9px;
+    }
+}
