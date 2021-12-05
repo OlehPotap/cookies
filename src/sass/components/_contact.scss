@@ -1,0 +1,142 @@
+.contact {
+  margin-bottom: 47px;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+
+  @include mq(tablet) {
+    margin-bottom: 50px;
+  }
+
+  @include mq (desktop) {
+      margin-bottom: 82px;
+  }
+
+  &__title {
+    font-family: var(--title-font), sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2.8;
+
+    text-align: center;
+
+    color: var(--primary-text-color);
+
+    @include mq(desktop) {
+      font-size: 36px;
+      line-height: 1.8;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+
+    text-align: center;
+
+    @include mq(desktop) {
+      font-size: 18px;
+      line-height: 3.61;
+    }
+  }
+
+  &__forma {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    margin-bottom: 25px;
+
+    @include mq(tablet) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+
+    border: 1px solid var(--modal-primary-color);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+
+    background-color: transparent;
+    color: rgba(171, 129, 108, 1);
+
+    @include mq(tablet) {
+      width: 410px;
+    }
+
+    @include mq(desktop) {
+      width: 430px;
+    }
+
+    &::placeholder {
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.2;
+
+      color: rgba(171, 129, 108, 0.5);
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__message {
+    width: 100%;
+    height: 22px;
+    margin-bottom: 37px;
+
+    border: 1px solid var(--modal-primary-color);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+
+    background-color: transparent;
+    color: rgba(171, 129, 108, 1);
+    resize: none;
+    overflow: hidden;
+
+    &::placeholder {
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.2;
+
+      color: rgba(171, 129, 108, 0.5);
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    @include mq(tablet) {
+      width: 410px;
+    }
+
+    @include mq(desktop) {
+        width: 430px;
+      }
+  }
+
+  &__button {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
