@@ -79,11 +79,17 @@
     }
 }
 
+.box {
+    @include mq(tablet) {
+        display: flex;
+    }
+}
+
 .card--box {
-    position : relative;
     display  : flex;
     flex-wrap: wrap;
 }
+
 
 .card {
     width         : 142px;
