@@ -43,6 +43,10 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    &::before {
+        content: '> ';
+    }
 }
 
 .list__item,
