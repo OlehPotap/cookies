@@ -13,6 +13,8 @@
 //Библиотека для модалки
 @import './utils/hamburgers/hamburgers.scss';
 // ============Стили страницы==================
+//Стили хедера
+@import './components/header';
 //Стили мобильного меню
 @import './components/menu-mobile.scss';
 // Стили сеции About us
