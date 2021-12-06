@@ -46,10 +46,18 @@
 }
 
 .button--read-more {
-    width           : 67px;
+    font-family     : var(--title-font);
+    text-align      : left;
+    font-size       : 18px;
     height          : 65px;
     border          : none;
+    color           : var(--hover-color);
     background-color: transparent;
+
+    &:hover,
+    &:focus {
+        color: darken(#876655, 15%);
+    }
 }
 
 .card--box {
