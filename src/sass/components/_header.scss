@@ -1,7 +1,6 @@
 .logo {
     margin-top: 7px;
     margin-right: auto;
-    margin-left: auto;
     z-index: 25;
   
     @include mq($tablet) {
@@ -55,6 +54,7 @@
   }
   .navigation {
     display: flex;
+    align-items: center;
     z-index: 100;
     @include mq($notDesktop) {
       align-items: center;
@@ -127,29 +127,15 @@
   }
 
   &__button {
-    min-width: 145px;
-    height: 40px;
-    background-color: var(--modal-primary-color);
-    border-radius: 25px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    color: var(--secondary-bgr-color);
-    transition: background-color var(--animation);
-    z-index: 25;
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: var(--hover-color);
-    }
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
 
     @include mq($tablet) {
-      margin-bottom: 15px;
+      margin-left: auto;
     }
     @include mq($desktop) {
-      margin-bottom: 25px;
+      margin-left: auto;
     }
   }
 }
