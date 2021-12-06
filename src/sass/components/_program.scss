@@ -45,6 +45,21 @@
     }
 }
 
+.is-hidden {
+    @include mq (notDesktop) {
+        position      : fixed;
+        opacity       : 0;
+        pointer-events: none;
+        visibility    : hidden;
+    }
+}
+
+.button__is-hidden {
+    position : fixed;
+    transform: scale(0);
+
+}
+
 .button--read-more {
     font-family     : var(--title-font);
     text-align      : left;
@@ -57,6 +72,10 @@
     &:hover,
     &:focus {
         color: darken(#876655, 15%);
+    }
+
+    @include mq(desktop) {
+        display: none;
     }
 }
 
