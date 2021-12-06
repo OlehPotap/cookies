@@ -1,4 +1,4 @@
-.h2__about-us {
+.about-us__h2 {
   font-family: var(--title-font);
   font-size: 24px;
   font-style: normal;
@@ -11,7 +11,7 @@
     margin-bottom: 10px;
   }
 }
-.p__about-us {
+.about-us__p {
     transition: opacity var(--animation), visibility var(--animation);
     margin-bottom: 18px;
   @include mq(tablet) {
@@ -60,12 +60,18 @@
   font-weight: normal;
   font-size: 18px;
   text-align: center;
+  color:var(--hover-color);
   height: 65px;
   transition: transform var(--animation);
 
   @include mq(desktop)
   {
     display: none;
+  }
+  &:focus,
+  &:hover 
+  {
+    color:darken (var(--hover-color), 10%);
   }
 }
 .about-us__wrapper {

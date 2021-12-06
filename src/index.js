@@ -13,16 +13,18 @@ $('.menu-mobile__link').click(function () {
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-open]'),
-    closeModalBtn: document.querySelector('[data-close]'),
-    modal: document.querySelector('[paragraph-show]'),
+    readmorebtn: document.querySelector('[data-open]'),
+    lessbtn: document.querySelector('[data-close]'),
+    paragraph: document.querySelector('[paragraph-show]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.readmorebtn.addEventListener('click', toggleModal);
+  refs.lessbtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
-    refs.modal.classList.toggle('about-us_is-hidden');
-    refs.openModalBtn.classList.toggle('button__is-hidden');
-    refs.closeModalBtn.classList.toggle('button__is-hidden');}
+    refs.paragraph.classList.toggle('about-us_is-hidden');
+    refs.readmorebtn.classList.toggle('button__is-hidden');
+    refs.lessbtn.classList.toggle('button__is-hidden');}
+    
 })();
+
