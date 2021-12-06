@@ -1,0 +1,186 @@
+.registration-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0px 0px;
+
+  padding: 15px 15px 34px 15px;
+  margin: 0 auto 27px auto;
+
+  background-color: var(--modal-bgr-color);
+
+  @include mq(tablet) {
+    width: 634px;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 35px 21px 35px 30px;
+    margin: 0 auto 27px auto;
+
+    border-radius: 150px;
+  }
+
+  @include mq(desktop) {
+    width: 822px;
+    margin: 0 auto 27px auto;
+  }
+
+  &__heading {
+    display: block;
+    height: 65px;
+    margin-bottom: 11px;
+
+    font-family: var(--title-font), sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2.8;
+
+    text-align: center;
+
+    color: var(--primary-text-color);
+
+    @include mq(tablet) {
+      position: absolute;
+      transform: translatey(-190px);
+    }
+  }
+
+  &__when {
+    margin-bottom: 25px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+
+    @include mq(tablet) {
+      text-align: right;
+    }
+  }
+
+  &__cost {
+    margin-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+@include mq(tablet) {
+  .registration-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin-right: 30px;
+  }
+}
+
+.underline {
+  margin-bottom: 13px;
+
+  display: inline-block;
+
+  border: 1px solid rgba(171, 129, 108, 0.5);
+
+  @include mq(tablet) {
+    display: none;
+  }
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+
+  @include mq(tablet) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__heading {
+    margin-bottom: 15px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+
+    @include mq(tablet) {
+      text-align: left;
+    }
+  }
+
+  &__input {
+    width: 100%;
+
+    border: 1px solid var(--modal-primary-color);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+
+    color: rgba(171, 129, 108, 1);
+
+    &::placeholder {
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.2;
+
+      color: rgba(171, 129, 108, 0.5);
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+  label {
+    margin-bottom: 25px;
+
+    &:nth-child(4) {
+      margin-bottom: 37px;
+    }
+
+    @include mq(tablet) {
+      margin-bottom: 15px;
+      &:nth-child(4) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.registration-submit-button {
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq(tablet) {
+    margin-right: 0;
+  }
+
+  @include mq(desktop) {
+    margin-left: 0;
+  }
+}
+
+.form-inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include mq(tablet) {
+    width: 294px;
+    padding: 21px 30px;
+    border-left: 1px solid rgba(171, 129, 108, 0.5);
+  }
+}

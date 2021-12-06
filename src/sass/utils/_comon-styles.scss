@@ -38,7 +38,7 @@ img {
 /* Основные стили страницы */
 
 .container {
-  max-width: 480px;
+  max-width: 320px;
 
   padding-left: 15px;
   padding-right: 15px;
@@ -51,6 +51,90 @@ img {
   }
 
   @include mq(desktop) {
-    max-width: 1200px;
+    max-width: 1280px;
   }
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--primary-text-color);
+
+  background-color: var(--secondary-bgr-color);
+
+  background: url(../images/PNG/header/pic-donuts_sm.png) no-repeat top left,
+    url(../images/PNG/body-bg/wheat_sm.png) no-repeat bottom right,
+    url(../images/PNG/body-bg/mobile-bot.png) no-repeat bottom,
+    url(../images/PNG/body-bg/mobile-top.png) no-repeat top;
+  background-size: 117px, 90px, 100%, 100%;
+
+  @include mq(retina) {
+    background: url(../images/PNG/header/pic-donuts@2x_sm.png) no-repeat top left,
+      url(../images/PNG/body-bg/wheat_sm@2x.png) no-repeat bottom right,
+      url(../images/PNG/body-bg/mobile-bot@2x.png) no-repeat bottom,
+      url(../images/PNG/body-bg/mobile-top@2x.png) no-repeat top;
+    background-size: 117px, 90px, 100%, 100%;
+  }
+
+  @include mq(tablet) {
+    background: url(../images/PNG/header/pic-donuts_md.png) no-repeat top right 137px,
+      url(../images/PNG/body-bg/wheat_md.png) no-repeat bottom right,
+      url(../images/PNG/body-bg/tablet-bot.png) no-repeat bottom,
+      url(../images/PNG/body-bg/tablet-top.png) no-repeat top;
+    background-size: 377px, 150px, 100%, 100%;
+
+    @include mq(retina) {
+      background: url(../images/PNG/header/pic-donuts@2x_md.png) no-repeat top right 137px,
+        url(../images/PNG/body-bg/wheat_md@2x.png) no-repeat bottom right,
+        url(../images/PNG/body-bg/tablet-bot@2x.png) no-repeat bottom,
+        url(../images/PNG/body-bg/tablet-top@2x.png) no-repeat top;
+      background-size: 37px, 150px, 100%, 100%;
+    }
+  }
+
+  @include mq(desktop) {
+    background: url(../images/PNG/body-bg/spoon-1.png) no-repeat top 180px left,
+      url(../images/PNG/header/pic-donuts_lg.png) no-repeat top right,
+      url(../images/PNG/body-bg/wheat_lg.png) no-repeat bottom right,
+      url(../images/PNG/body-bg/desktop-bot.png) no-repeat bottom,
+      url(../images/PNG/body-bg/desktop-top.png) no-repeat top;
+    background-size: 130px, 720px, 320px, 100%, 100%;
+
+    @include mq(retina) {
+      background: url(../images/PNG/body-bg/spoon-1@2x.png) no-repeat top left,
+        url(../images/PNG/header/pic-donuts_lg.png) no-repeat top right,
+        url(../images/PNG/body-bg/wheat_lg.png) no-repeat bottom right,
+        url(../images/PNG/body-bg/desktop-bot@2x.png) no-repeat bottom,
+        url(../images/PNG/body-bg/desktop-top@2x.png) no-repeat top;
+      background-size: 130px, 720px, 320px, 100%, 100%;
+    }
+  }
+}
+
+.button {
+  width: 145px;
+  height: 40px;
+
+  background-color: var(--modal-primary-color);
+
+  border-radius: 25px;
+
+  color: var(--secondary-bgr-color);
+
+  font-family: var(--title-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+
+  padding: 0;
+  margin: 0;
+  border: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
+}
+html {
+  scroll-behavior: smooth;
 }
