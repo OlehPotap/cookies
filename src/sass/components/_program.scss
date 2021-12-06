@@ -5,7 +5,6 @@
 
 .title--primary,
 .card__title {
-    margin        : 0 auto;
     font-family   : var(--title-font);
     font-size     : 24px;
     line-height   : 2.71;
@@ -14,6 +13,29 @@
 
     color: var(--primary-text-color);
 }
+
+@include mq(desktop) {
+    .card__title.card__title--font {
+        font-size    : 24px;
+        margin-bottom: 16px;
+    }
+
+    .title--primary {
+        font-size: 36px;
+    }
+
+    .list__text.list__text--font,
+    .list__item.list__item--font {
+        font-size    : 18px;
+        margin-bottom: 15px;
+    }
+
+    .card__text.card__text--font {
+        font-size    : 16px;
+        margin-bottom: 15px;
+    }
+}
+
 
 .list__item {
     margin-bottom: 10px;
@@ -81,39 +103,86 @@
 
 .box {
     @include mq(tablet) {
-        display: flex;
+        display        : flex;
+        justify-content: center;
     }
 }
 
 .card--box {
-    display  : flex;
-    flex-wrap: wrap;
+    display        : flex;
+    justify-content: space-around;
+    flex-wrap      : wrap;
+
+    @include mq(tablet-only) {
+        width: 298px;
+    }
+
+    @include mq(desktop) {
+        width: 392px;
+    }
 }
 
-
-.card {
-    width         : 142px;
+.text--box {
     display       : flex;
     flex-direction: column;
 
-    align-items: center;
+    @include mq(tablet) {
+        width       : 298px;
+        margin-right: 40px;
+        align-items : flex-start;
+    }
 
+    @include mq(desktop) {
+        width: 392px;
+    }
+}
+
+.card {
+    position      : relative;
+    width         : 142px;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
 
     &--1 {
         margin-right : 6px;
         margin-bottom: 25px;
+        height       : 176px;
+
+        @include mq(desktop) {
+            width : 180px;
+            height: 223px;
+        }
     }
 
     &--2 {
         margin-top: 33px;
+        height    : 168px;
+
+        @include mq(desktop) {
+            width : 180px;
+            height: 215px;
+        }
     }
 
     &--3 {
         margin-right: 5px;
+        height      : 173px;
+
+        @include mq(desktop) {
+            width : 180px;
+            height: 220px;
+        }
     }
 
     &--4 {
         margin-top: 33px;
+        height    : 170px;
+
+        @include mq(desktop) {
+            width : 180px;
+            height: 215px;
+        }
 
     }
 
@@ -134,6 +203,7 @@
     &__svg {
         margin-bottom: 9px;
     }
+
 }
 
 .card__img {
@@ -143,20 +213,57 @@
     &--1 {
         width : 77px;
         height: 81px;
+
+        @include mq(desktop) {
+            width : 97px;
+            height: 107px;
+        }
     }
 
     &--2 {
         width : 65px;
         height: 72px;
+
+        @include mq(desktop) {
+            width : 83px;
+            height: 92px;
+        }
     }
 
     &--3 {
         width : 70px;
         height: 77px;
+
+        @include mq(desktop) {
+            width : 88px;
+            height: 97px;
+        }
     }
 
     &--4 {
         width : 65px;
         height: 73px;
+
+        @include mq(desktop) {
+            width        : 83px;
+            height       : 92px;
+            margin-bottom: 6px;
+        }
+    }
+}
+
+.card__circle {
+    position        : absolute;
+    bottom          : 0;
+    width           : 142px;
+    height          : 142px;
+    background-color: var(--circle-color);
+    box-shadow      : var(--shadow-circle);
+    border-radius   : 50%;
+    z-index         : -1;
+
+    @include mq(desktop) {
+        width : 180px;
+        height: 180px;
     }
 }
