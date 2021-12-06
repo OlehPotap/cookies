@@ -12,6 +12,7 @@
   }
 }
 .p__about-us {
+    transition: opacity var(--animation), visibility var(--animation);
     margin-bottom: 18px;
   @include mq(tablet) {
     font-family: Montserrat;
@@ -39,15 +40,15 @@
 }
 
 }
-.about_us__none-txt
-{
+// .about_us__none-txt
+// {
 
-    display: none;
-  @include mq(desktop)
-  {
-    display: block;
-  }
-}
+//     display: none;
+//   @include mq(desktop)
+//   {
+//     display: block;
+//   }
+// }
 .button__about-us {
   display: block;
   border: none;
@@ -58,11 +59,13 @@
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 3.61;
   text-align: center;
+  height: 65px;
+  transition: transform var(--animation);
+
   @include mq(desktop)
   {
-      display: none;
+    display: none;
   }
 }
 .about-us__wrapper {
@@ -92,11 +95,26 @@
     @include mq(desktop){
     margin-left: 76px;}
 }
-.dots
-{
-  @include mq(desktop)
-  {
-    display: none;
-  }
-}
+// .dots
+// {
+//   @include mq(desktop)
+//   {
+//     display: none;
+//   }
+// }
 //
+.about-us_is-hidden {
+  @include mq (notDesktop)
+  {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+}
+.button__is-hidden
+{
+ position: fixed;
+ transform: scale(0);
+
+}

@@ -10,7 +10,8 @@
 @import './utils/variables';
 // Общие стили
 @import './utils/comon-styles';
-
+//Библиотека для модалки
+@import './utils/hamburgers/hamburgers.scss';
 // ============Стили страницы==================
 //Стили мобильного меню
 @import './components/menu-mobile.scss';
