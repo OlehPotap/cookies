@@ -6,11 +6,10 @@
 .title--primary,
 .card__title {
     margin        : 0 auto;
-    font-family   : var(--title-font), sans-serif;
-    font-weight   : $fw;
+    font-family   : var(--title-font);
     font-size     : 24px;
     line-height   : 2.71;
-    letter-spacing: $ls;
+    letter-spacing: 0.01em;
     text-align    : center;
 
     color: var(--primary-text-color);
@@ -28,7 +27,6 @@
 .list__text,
 .card__text {
     font-family: var(--primary-font);
-    font-weight: $fw;
     font-size  : 16px;
     line-height: 1.25;
 
@@ -47,14 +45,40 @@
     }
 }
 
+.card--box {
+    position : relative;
+    display  : flex;
+    flex-wrap: wrap;
+}
+
 .card {
-    display        : flex;
-    flex-direction : column;
-    justify-content: center;
-    flex-basis     : 142px;
-    padding        : 0 auto;
+    width         : 142px;
+    display       : flex;
+    flex-direction: column;
+
+    align-items: center;
+
+
+    &--1 {
+        margin-right : 6px;
+        margin-bottom: 25px;
+    }
+
+    &--2 {
+        margin-top: 33px;
+    }
+
+    &--3 {
+        margin-right: 5px;
+    }
+
+    &--4 {
+        margin-top: 33px;
+
+    }
 
     &__title {
+        font-family  : var(--title-font);
         font-size    : 18px;
         line-height  : 1.25;
         margin-bottom: 13px;
@@ -64,9 +88,35 @@
         font-size    : 14px;
         line-height  : 1.21;
         margin-bottom: 13px;
+        text-align   : inherit;
     }
 
     &__svg {
         margin-bottom: 9px;
+    }
+}
+
+.card__img {
+
+    margin-bottom: 4px;
+
+    &--1 {
+        width : 77px;
+        height: 81px;
+    }
+
+    &--2 {
+        width : 65px;
+        height: 72px;
+    }
+
+    &--3 {
+        width : 70px;
+        height: 77px;
+    }
+
+    &--4 {
+        width : 65px;
+        height: 73px;
     }
 }
