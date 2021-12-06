@@ -5,6 +5,12 @@ $('.menu-mobile__btn').click(function () {
   $('.menu-mobile__list').toggleClass('is-open');
 });
 
+
+$('.menu-mobile__link').click(function () {
+  $('.menu-mobile__list').toggleClass('is-open');
+  $('.menu-mobile__btn').toggleClass('is-active');
+});
+
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-open]'),
@@ -19,5 +25,4 @@ $('.menu-mobile__btn').click(function () {
     refs.modal.classList.toggle('about-us_is-hidden');
     refs.openModalBtn.classList.toggle('button__is-hidden');
     refs.closeModalBtn.classList.toggle('button__is-hidden');}
-    
 })();
