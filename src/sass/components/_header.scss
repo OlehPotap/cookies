@@ -13,7 +13,6 @@
 
   @include mq(desktop) {
     margin-top: 31px;
-    margin-left: auto;
     margin-right: 38px;
   }
 }
@@ -34,19 +33,20 @@
 
     align-items: center;
     z-index: 100;
-    @include mq($notDesktop) {
-      align-items: center;
-    justify-content: center;
-    align-items: center;
-    width: 26px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color var(--animation);
-    &:hover,
-    &:focus {
-      background-color: var(--primary-text-color);
 
+    @include mq(notDesktop) {
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      width: 26px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: background-color var(--animation);
+      &:hover,
+      &:focus {
+        background-color: var(--primary-text-color);
+      }
     }
   }
 
@@ -63,7 +63,9 @@
 }
 .navigation {
   display: flex;
+  align-items: center;
   z-index: 100;
+  margin-right: auto;
   @include mq(notDesktop) {
     align-items: center;
   }
@@ -72,6 +74,8 @@
 .navigation-list {
   display: inline-flex;
   font-size: 18px;
+  margin-right: auto;
+
   @include mq(notDesktop) {
     display: none;
   }
@@ -86,6 +90,11 @@
     color: var(--hover-color);
   }
 }
+
+.navigation__link {
+  color: inherit;
+}
+
 .hero {
   &__container {
     display: flex;
@@ -135,21 +144,25 @@
   }
 
   &__button {
-    display: inline-block;
     margin-right: auto;
     margin-left: auto;
-    
-    @include mq($tablet) {
-      margin-left: auto;
-    }
-    @include mq($desktop) {
-      margin-left: auto;
 
     @include mq(tablet) {
-      margin-bottom: 15px;
+      margin-left: auto;
     }
     @include mq(desktop) {
-      margin-bottom: 25px;
+      margin-left: auto;
+
+      @include mq(tablet) {
+        margin-bottom: 15px;
+      }
+      @include mq(desktop) {
+        margin-bottom: 25px;
+      }
     }
   }
+}
+
+.reg {
+  color: var(--secondary-bgr-color);
 }

@@ -111,6 +111,9 @@ body {
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 145px;
   height: 40px;
 
