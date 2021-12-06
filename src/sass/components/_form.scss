@@ -47,6 +47,7 @@
     @include mq(tablet) {
       position: absolute;
       transform: translatey(-190px);
+      z-index: -1;
     }
   }
 
