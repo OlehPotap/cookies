@@ -59,8 +59,8 @@
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 3.61;
   text-align: center;
+  height: 65px;
   transition: transform var(--animation);
 
   @include mq(desktop)
