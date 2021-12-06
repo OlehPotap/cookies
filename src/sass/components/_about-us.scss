@@ -12,8 +12,9 @@
   }
 }
 .about-us__p {
-    transition: opacity var(--animation), visibility var(--animation);
+  transition: opacity var(--animation), visibility var(--animation), transform var(--animation);
     margin-bottom: 18px;
+    
   @include mq(tablet) {
     font-family: Montserrat;
     font-size: 16px;
@@ -40,15 +41,7 @@
 }
 
 }
-// .about_us__none-txt
-// {
 
-//     display: none;
-//   @include mq(desktop)
-//   {
-//     display: block;
-//   }
-// }
 .button__about-us {
   display: block;
   border: none;
@@ -61,9 +54,10 @@
   font-size: 18px;
   text-align: center;
   color:var(--hover-color);
-  height: 65px;
+  height: 36px;
+  transform: translateY(0em);
   transition: transform var(--animation);
-
+  
   @include mq(desktop)
   {
     display: none;
@@ -101,14 +95,7 @@
     @include mq(desktop){
     margin-left: 76px;}
 }
-// .dots
-// {
-//   @include mq(desktop)
-//   {
-//     display: none;
-//   }
-// }
-//
+
 .about-us_is-hidden {
   @include mq (notDesktop)
   {
@@ -116,11 +103,13 @@
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  transform: translateY(1em); 
+  transition: transform var(--animation);
 }
 }
 .button__is-hidden
 {
  position: fixed;
- transform: scale(0);
+ transform: translateY(1em);
 
 }
