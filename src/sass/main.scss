@@ -1,0 +1,29 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// ===============Утилиты======================
+// Миксины
+@import './utils/mixins';
+// Переменные
+@import './utils/variables';
+// Общие стили
+@import './utils/comon-styles';
+//Библиотека для модалки
+@import './utils/hamburgers/hamburgers.scss';
+// ============Стили страницы==================
+//Стили хедера
+@import './components/header';
+//Стили мобильного меню
+@import './components/menu-mobile.scss';
+// Стили сеции About us
+@import './components/about-us';
+// Reviews
+@import './components/reviews';
+//Стили формы регистрации
+@import './components/form';
+// Стили формы контактов
+@import './components/contact';
+// Стили футера
+@import './components/footer';
