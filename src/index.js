@@ -1,4 +1,5 @@
 import './sass/main.scss';
+import './js/slider.js';
 
 // $num = $('.reviews__item').length;
 // $even = $num / 2;
@@ -84,7 +85,6 @@ $('.menu-mobile__link').click(function () {
     refs.openModalBtn.classList.toggle('button__is-hidden');
     refs.closeModalBtn.classList.toggle('button__is-hidden');
   }
-  
 })();
 $(function () {
   // при нажатии на кнопку scrollup
