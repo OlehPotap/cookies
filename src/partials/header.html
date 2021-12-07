@@ -8,28 +8,30 @@
     <div class="container header__container">
       <nav class="navigation">
         <a class="logo" href="#">
-          <source
-            srcset="
-              ../src/images/PNG/header/desktop/logo_desktop.png    1x,
-              ../src/images/PNG/header/desktop/logo_desktop@2x.png 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              ../src/images/PNG/header/tablet/logo_tablet.png    1x,
-              ../src/images/PNG/header/tablet/logo_tablet@2x.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ../src/images/PNG/header/mobile/logo_mobile.png    1x,
-              ../src/images/PNG/header/mobile/logo_mobile@2x.png 2x
-            "
-            media="(max-width: 767.98px)"
-          />
-          <img src="../src/images/PNG/header/desktop/logo_desktop.png" alt="logo desktop" />
+          <picture>
+            <source
+              srcset="
+                ../src/images/png/header/desktop/logo_desktop.png    1x,
+                ../src/images/png/header/desktop/logo_desktop@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ../src/images/png/header/tablet/logo_tablet.png    1x,
+                ../src/images/png/header/tablet/logo_tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ../src/images/png/header/mobile/logo_mobile.png    1x,
+                ../src/images/png/header/mobile/logo_mobile@2x.png 2x
+              "
+              media="(max-width: 767.98px)"
+            />
+            <img src="../src/images/png/header/desktop/logo_desktop.png" alt="logo desktop" />
+          </picture>
         </a>
         <ul class="list navigation-list" id="menu">
           <li class="navigation-list__item">

@@ -68,8 +68,6 @@ img {
 }
 
 .container {
-  min-width: 320px;
-
   margin-left: auto;
   margin-right: auto;
 
@@ -88,58 +86,58 @@ body {
 
   background-color: var(--secondary-bgr-color);
 
-  background: url(../images/PNG/header/pic-donuts_sm.png) no-repeat top left,
-    url(../images/PNG/body-bg/wheat_sm.png) no-repeat bottom right,
-    url(../images/PNG/body-bg/mobile-bot.png) no-repeat bottom 216px right,
-    url(../images/PNG/body-bg/mobile-top.png) no-repeat top;
+  background: url(../images/png/header/pic-donuts_sm.png) no-repeat top left,
+    url(../images/png/body-bg/wheat_sm.png) no-repeat bottom right,
+    url(../images/png/body-bg/mobile-bot.png) no-repeat bottom 216px right,
+    url(../images/png/body-bg/mobile-top.png) no-repeat top;
   background-size: 117px, 90px, 100%, 100%;
 
   @include mq(retina) {
-    background: url(../images/PNG/header/pic-donuts@2x_sm.png) no-repeat top left,
-      url(../images/PNG/body-bg/wheat_sm@2x.png) no-repeat bottom right,
-      url(../images/PNG/body-bg/mobile-bot@2x.png) no-repeat bottom 216px right,
-      url(../images/PNG/body-bg/mobile-top@2x.png) no-repeat top;
+    background: url(../images/png/header/pic-donuts@2x_sm.png) no-repeat top left,
+      url(../images/png/body-bg/wheat_sm@2x.png) no-repeat bottom right,
+      url(../images/png/body-bg/mobile-bot@2x.png) no-repeat bottom 216px right,
+      url(../images/png/body-bg/mobile-top@2x.png) no-repeat top;
     background-size: 117px, 90px, 100%, 100%;
   }
 
   @include mq(tablet) {
-    background: url(../images/PNG/header/pic-donuts_md.png) no-repeat top right 137px,
-      url(../images/PNG/body-bg/wheat_md.png) no-repeat bottom right,
-      url(../images/PNG/registration/donut_lg.png) no-repeat bottom 500px left,
-      url(../images/PNG/registration/kisspng-party_lg.png) no-repeat bottom 250px right,
-      url(../images/PNG/body-bg/tablet-bot.png) no-repeat bottom,
-      url(../images/PNG/body-bg/tablet-top.png) no-repeat top;
+    background: url(../images/png/header/pic-donuts_md.png) no-repeat top right 137px,
+      url(../images/png/body-bg/wheat_md.png) no-repeat bottom right,
+      url(../images/png/registration/donut_lg.png) no-repeat bottom 500px left,
+      url(../images/png/registration/kisspng-party_lg.png) no-repeat bottom 250px right,
+      url(../images/png/body-bg/tablet-bot.png) no-repeat bottom,
+      url(../images/png/body-bg/tablet-top.png) no-repeat top;
     background-size: 377px, 150px, 200px, 250px, 100%, 100%;
 
     @include mq(retina) {
-      background: url(../images/PNG/header/pic-donuts@2x_md.png) no-repeat top right 137px,
-        url(../images/PNG/body-bg/wheat_md@2x.png) no-repeat bottom right,
-        url(../images/PNG/registration/donut@2x_lg.png) no-repeat bottom 500px left,
-        url(../images/PNG/registration/kisspng-party_lg.png) no-repeat bottom 250px right,
-        url(../images/PNG/body-bg/tablet-bot@2x.png) no-repeat bottom,
-        url(../images/PNG/body-bg/tablet-top@2x.png) no-repeat top;
+      background: url(../images/png/header/pic-donuts@2x_md.png) no-repeat top right 137px,
+        url(../images/png/body-bg/wheat_md@2x.png) no-repeat bottom right,
+        url(../images/png/registration/donut@2x_lg.png) no-repeat bottom 500px left,
+        url(../images/png/registration/kisspng-party_lg.png) no-repeat bottom 250px right,
+        url(../images/png/body-bg/tablet-bot@2x.png) no-repeat bottom,
+        url(../images/png/body-bg/tablet-top@2x.png) no-repeat top;
       background-size: 377px, 150px, 200px, 250px, 100%, 100%;
     }
   }
 
   @include mq(desktop) {
-    background: url(../images/PNG/body-bg/spoon-1.png) no-repeat top 180px left,
-      url(../images/PNG/header/pic-donuts_lg.png) no-repeat top right,
-      url(../images/PNG/registration/donut_lg.png) no-repeat bottom 550px left 80px,
-      url(../images/PNG/registration/kisspng-party_lg.png) no-repeat bottom 220px right,
-      url(../images/PNG/body-bg/wheat_lg.png) no-repeat bottom right,
-      url(../images/PNG/body-bg/desktop-bot.png) no-repeat bottom,
-      url(../images/PNG/body-bg/desktop-top.png) no-repeat top;
+    background: url(../images/png/body-bg/spoon-1.png) no-repeat top 180px left,
+      url(../images/png/header/pic-donuts_lg.png) no-repeat top right,
+      url(../images/png/registration/donut_lg.png) no-repeat bottom 550px left 80px,
+      url(../images/png/registration/kisspng-party_lg.png) no-repeat bottom 220px right,
+      url(../images/png/body-bg/wheat_lg.png) no-repeat bottom right,
+      url(../images/png/body-bg/desktop-bot.png) no-repeat bottom,
+      url(../images/png/body-bg/desktop-top.png) no-repeat top;
     background-size: 130px, 720px, 200px, 550px, 320px, 100%, 100%;
 
     @include mq(retina) {
-      background: url(../images/PNG/body-bg/spoon-1@2x.png) no-repeat top left,
-        url(../images/PNG/header/pic-donuts_lg.png) no-repeat top right,
-        url(../images/PNG/registration/donut@2x_lg.png) no-repeat bottom 550px left 80px,
-        url(../images/PNG/registration/kisspng-party@2x_lg.png) no-repeat bottom 220px right,
-        url(../images/PNG/body-bg/wheat_lg.png) no-repeat bottom right,
-        url(../images/PNG/body-bg/desktop-bot@2x.png) no-repeat bottom,
-        url(../images/PNG/body-bg/desktop-top@2x.png) no-repeat top;
+      background: url(../images/png/body-bg/spoon-1@2x.png) no-repeat top left,
+        url(../images/png/header/pic-donuts_lg.png) no-repeat top right,
+        url(../images/png/registration/donut@2x_lg.png) no-repeat bottom 550px left 80px,
+        url(../images/png/registration/kisspng-party@2x_lg.png) no-repeat bottom 220px right,
+        url(../images/png/body-bg/wheat_lg.png) no-repeat bottom right,
+        url(../images/png/body-bg/desktop-bot@2x.png) no-repeat bottom,
+        url(../images/png/body-bg/desktop-top@2x.png) no-repeat top;
       background-size: 130px, 720px, 200px, 550px, 320px, 100%, 100%;
     }
   }
