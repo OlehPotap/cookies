@@ -57,7 +57,7 @@ $('.menu-mobile__link').click(function () {
   const refs = {
     readmorebtn: document.querySelector('[data-open]'),
     lessbtn: document.querySelector('[data-close]'),
-    paragraph: document.querySelector('[paragraph-show]'),
+    paragraph: document.querySelector('[data-paragraph-show]'),
   };
 
   refs.readmorebtn.addEventListener('click', toggleModal);
@@ -74,7 +74,7 @@ $('.menu-mobile__link').click(function () {
   const refs = {
     openModalBtn: document.querySelector('[data-open-program]'),
     closeModalBtn: document.querySelector('[data-close-program]'),
-    modal: document.querySelector('[paragraph-show-program]'),
+    modal: document.querySelector('[data-paragraph-show-program]'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);

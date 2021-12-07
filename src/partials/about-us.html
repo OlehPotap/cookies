@@ -11,15 +11,11 @@
           media="(min-width: 720px)"
           srcset="./images/png/about_us/pic_md.png 1x, ./images/png/about_us/pic@2x_md.png 2x"
         />
-        <source srcset="./images/png/about_us/pic@2x_sm.png 2x" />
-        <img
-          srcset="./images/png/about_us/pic_sm.png"
-          src="./images/png/about_us/pic_sm.png"
-          alt="пончики"
-        />
+        <source media="(max-width: 719px)" srcset="./images/png/about_us/pic@2x_sm.png 2x" />
+        <img src="./images/png/about_us/pic_sm.png" alt="пончики" />
       </picture>
       <div class="about-us__text">
-        <h2 class="about-us__h2" id="about-us">About us</h2>
+        <h2 class="about-us__h2">About us</h2>
         <p class="about-us__p">
           Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated
           donuts which will save the world!
@@ -31,7 +27,7 @@
           shop have received multiple awards & recognition for excellence.
         </p>
 
-        <p class="about-us__p about-us__p__lastchild about-us_is-hidden" paragraph-show>
+        <p class="about-us__p about-us__p__lastchild about-us_is-hidden" data-paragraph-show>
           We are going to teach you how to cook with passion and sparkles in your eyes! We love what
           we do and believe you will enjoy our cooking atmosphere!
         </p>
