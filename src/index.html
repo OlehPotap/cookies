@@ -3,25 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <meta property="og:title" content="your_link_title"> <meta property="og:image" content="./images/PNG/header/pic-donuts_lg.png">
+    <title>Oh my Donuts</title>
+    <!-- fav icon -->
+    <link rel="icon" href="./images/PNG/favicon.png" type="image/x-icon"
     <!-- підключення шрифтів -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+
+    <!-- Добавление анимации -->
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    /> -->
+
+    <style type="text/css">
+      body {
+        background-color: var(--secondary-bgr-color);
+      }
+
+      .top {
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+
+      .bot {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+
+      body > picture > img {
+        width: 100%;
+      }
+    </style>
+
+    <script src="https://kit.fontawesome.com/db15f74c32.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <include src="./partials/menu-mobile.html"></include>
+    <include src="./partials/header.html"></include>
+    <include src="./partials/about-us.html"></include>
+    <include src="./partials/program.html"></include>
+    <include src="./partials/reviews.html"></include>
+    <include src="./partials/form.html"></include>
+    <include src="./partials/contact.html"></include>
+    <include src="./partials/footer.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
     <script src="./index.js"></script>
   </body>
 </html>
