@@ -68,6 +68,24 @@ $('.menu-mobile__link').click(function () {
     refs.lessbtn.classList.toggle('button__is-hidden');
   }
 })();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-open-program]'),
+    closeModalBtn: document.querySelector('[data-close-program]'),
+    modal: document.querySelector('[paragraph-show-program]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+    refs.openModalBtn.classList.toggle('button__is-hidden');
+    refs.closeModalBtn.classList.toggle('button__is-hidden');
+  }
+  
+})();
 $(function () {
   // при нажатии на кнопку scrollup
   $('.scrollup').click(function () {
