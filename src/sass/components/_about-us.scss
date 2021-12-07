@@ -50,14 +50,10 @@
 
 .button__about-us {
   position: relative;
-  z-index: 0;
   display: block;
   border: none;
-  outline: 0;
   background-color: transparent;
-  cursor: pointer;
-  font-family: Caveat Brush;
-  font-style: normal;
+  font-family: 'Caveat Brush';
   font-weight: normal;
   font-size: 18px;
   text-align: center;
@@ -110,7 +106,8 @@
   }
 }
 .about-us__button__is-hidden {
-  visibility: hidden;
   position: fixed;
+  visibility: hidden;
   transform: translateY(1em);
+  transition: transform var(--animation);
 }
