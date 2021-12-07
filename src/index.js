@@ -1,6 +1,5 @@
 import './sass/main.scss';
 
-
 // $num = $('.reviews__item').length;
 // $even = $num / 2;
 // $odd = ($num + 1) / 2;
@@ -18,21 +17,20 @@ import './sass/main.scss';
 // $('.reviews__item').click(function() {
 //   $slide = $('.active').width();
 //   console.log($('.active').position().left);
-  
+
 //   if ($(this).hasClass('next')) {
 //     $('.reviews__list').stop(false, true).animate({left: '-=' + $slide});
 //   } else if ($(this).hasClass('prev')) {
 //     $('.reviews__list').stop(false, true).animate({left: '+=' + $slide});
 //   }
-  
+
 //   $(this).removeClass('prev next');
 //   $(this).siblings().removeClass('prev active next');
-  
+
 //   $(this).addClass('active');
 //   $(this).prev().addClass('prev');
 //   $(this).next().addClass('next');
 // });
-
 
 // // Keyboard nav
 // $('html body').keydown(function(e) {
@@ -94,4 +92,3 @@ $(window).scroll(function () {
     $('.scrollup').fadeOut();
   }
 });
-
