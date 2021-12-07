@@ -1,0 +1,126 @@
+.about-us__h2 {
+  font-family: var(--title-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: center;
+  @include mq(tablet) {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+.about-us__p {
+    transition: opacity var(--animation), visibility var(--animation);
+    margin-bottom: 18px;
+  @include mq(tablet) {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+  }
+  @include mq(desktop) {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #2e2520;
+    width: 392px;
+  }
+  &__lastchild
+  {
+      margin-bottom: 0; 
+}
+
+}
+// .about_us__none-txt
+// {
+
+//     display: none;
+//   @include mq(desktop)
+//   {
+//     display: block;
+//   }
+// }
+.button__about-us {
+  display: block;
+  border: none;
+  outline: 0;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  color:var(--hover-color);
+  height: 65px;
+  transition: transform var(--animation);
+
+  @include mq(desktop)
+  {
+    display: none;
+  }
+  &:focus,
+  &:hover 
+  {
+    color:darken (var(--hover-color), 10%);
+  }
+}
+.about-us__wrapper {
+  @include mq(tablet) {
+    display: flex;
+    align-items: self-start;
+  }
+  @include mq(desktop)
+  {
+    align-items: center;
+  }
+}
+.about-us__pictures {
+  display: contents;
+  @include mq(tablet)
+  {
+    height: 546px;
+    width: 512px;
+  }
+}
+.about-us__text
+{
+    @include mq(tablet)
+    {
+        margin-left: 24px;
+    }
+    @include mq(desktop){
+    margin-left: 76px;}
+}
+// .dots
+// {
+//   @include mq(desktop)
+//   {
+//     display: none;
+//   }
+// }
+//
+.about-us_is-hidden {
+  @include mq (notDesktop)
+  {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+}
+.button__is-hidden
+{
+ position: fixed;
+ transform: scale(0);
+
+}

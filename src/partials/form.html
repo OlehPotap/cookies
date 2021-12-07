@@ -1,15 +1,61 @@
 <!-- тут будет форма -->
-<div class="form-registration">
-  <h2>Registration</h2>
-  <p>May 23, 11:00 New York</p>
-  <p>$ 699</p>
-  <form>
-    <p>Apply your personal info for registration</p>
-    <label for="name"><input type="text" name="name" id="name" placeholder="Your name" /></label>
-    <label for="phone"
-      ><input type="tel" name="phone" id="phone" placeholder="Phone number"
-    /></label>
-    <label for="email"><input type="email" name="email" id="email" placeholder="Email" /></label>
-  </form>
-  <button type="submit">Register</button>
-</div>
+<section class="registration">
+  <div class="container">
+    <div class="registration-wrapper">
+      <h2 class="registration-wrapper__heading">Registration</h2>
+      <div class="registration-info-wrapper">
+        <p class="registration-wrapper__when">
+          May 23, 11:00 <br />
+          New York
+        </p>
+        <p class="registration-wrapper__cost">$ 699</p>
+      </div>
+      <div class="underline"></div>
+      <form class="registration-form" name="contacts">
+        <div class="form-inputs-wrapper">
+          <p class="registration-form__heading">
+            Apply your personal info <br />
+            for registration
+          </p>
+          <label for="name">
+            <input
+              class="registration-form__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your name"
+              required
+              minlength="3"
+              pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+              title="Username must be two words separated by space."
+            />
+          </label>
+          <label for="phone"
+            ><input
+              class="registration-form__input"
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Phone number"
+              pattern="[0-9]{10}"
+              title="The phone number must be 10 digits long in format 0931112233"
+              required
+          /></label>
+          <label for="email">
+            <input
+              class="registration-form__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              title="email address must contain @ and domain part"
+              required
+            />
+          </label>
+        </div>
+        <button class="registration-submit-button button" type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+</section>
