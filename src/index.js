@@ -65,8 +65,8 @@ $('.menu-mobile__link').click(function () {
 
   function toggleModal() {
     refs.paragraph.classList.toggle('about-us_is-hidden');
-    refs.readmorebtn.classList.toggle('button__is-hidden');
-    refs.lessbtn.classList.toggle('button__is-hidden');
+    refs.readmorebtn.classList.toggle('about-us__button__is-hidden');
+    refs.lessbtn.classList.toggle('about-us__button__is-hidden');
   }
 })();
 

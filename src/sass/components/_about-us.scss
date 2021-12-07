@@ -96,11 +96,13 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    transform: translateY(1em);
-    transition: transform var(--animation);
+    transform: translateY(1em); 
+  transition: transform var(--animation);
   }
 }
-.button__is-hidden {
+.about-us__button__is-hidden 
+{
+  visibility: hidden;
   position: fixed;
   transform: translateY(1em);
 }
