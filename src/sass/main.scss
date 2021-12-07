@@ -13,6 +13,8 @@
 //Библиотека для модалки
 @import './utils/hamburgers/hamburgers.scss';
 // ============Стили страницы==================
+//Стили хедера
+@import './components/header';
 //Стили мобильного меню
 @import './components/menu-mobile.scss';
 // Стили сеции About us
@@ -20,6 +22,9 @@
 // Стили секции program
 @import './components/program';
 // Стили формы регистрации
+// Reviews
+@import './components/reviews';
+//Стили формы регистрации
 @import './components/form';
 // Стили формы контактов
 @import './components/contact';
