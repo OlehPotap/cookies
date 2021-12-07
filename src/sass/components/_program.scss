@@ -109,20 +109,21 @@
     @include mq(tablet) {
         display        : flex;
         justify-content: center;
+        align-items    : flex-start;
     }
 }
 
 .card--box {
-    display        : flex;
-    justify-content: space-around;
-    flex-wrap      : wrap;
+    display  : flex;
+    flex-wrap: wrap;
 
     @include mq(tablet-only) {
         width: 298px;
     }
 
     @include mq(desktop) {
-        width: 392px;
+        justify-content: space-around;
+        width          : 392px;
     }
 }
 
