@@ -13,8 +13,8 @@
 }
 .about-us__p {
   transition: opacity var(--animation), visibility var(--animation), transform var(--animation);
-    margin-bottom: 18px;
-    
+  margin-bottom: 18px;
+
   @include mq(tablet) {
     font-family: Montserrat;
     font-size: 16px;
@@ -23,7 +23,6 @@
     line-height: 20px;
     letter-spacing: 0em;
     text-align: left;
-    
   }
   @include mq(desktop) {
     font-family: Montserrat;
@@ -35,14 +34,14 @@
     color: #2e2520;
     width: 392px;
   }
-  &__lastchild
-  {
-      margin-bottom: 0; 
-}
-
+  &__lastchild {
+    margin-bottom: 0;
+  }
 }
 
 .button__about-us {
+  position: relative;
+  z-index: 0;
   display: block;
   border: none;
   outline: 0;
@@ -53,20 +52,17 @@
   font-weight: normal;
   font-size: 18px;
   text-align: center;
-  color:var(--hover-color);
+  color: var(--hover-color);
   height: 36px;
   transform: translateY(0em);
   transition: transform var(--animation);
-  z-index: -1;
-  
-  @include mq(desktop)
-  {
+
+  @include mq(desktop) {
     display: none;
   }
   &:focus,
-  &:hover 
-  {
-    color:darken (var(--hover-color), 10%);
+  &:hover {
+    color: darken (var(--hover-color), 10%);
   }
 }
 .about-us__wrapper {
@@ -74,43 +70,39 @@
     display: flex;
     align-items: self-start;
   }
-  @include mq(desktop)
-  {
+  @include mq(desktop) {
     align-items: center;
   }
 }
 .about-us__pictures {
   display: contents;
-  @include mq(tablet)
-  {
+  @include mq(tablet) {
     height: 546px;
     width: 512px;
   }
 }
-.about-us__text
-{
-    @include mq(tablet)
-    {
-        margin-left: 24px;
-    }
-    @include mq(desktop){
-    margin-left: 76px;}
+.about-us__text {
+  @include mq(tablet) {
+    margin-left: 24px;
+  }
+  @include mq(desktop) {
+    margin-left: 76px;
+  }
 }
 
 .about-us_is-hidden {
-  @include mq (notDesktop)
-  {
-  position: fixed;
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transform: translateY(1em); 
+  @include mq(notDesktop) {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: translateY(1em); 
   transition: transform var(--animation);
+  }
 }
-}
-.button__is-hidden
+.about-us__button__is-hidden 
 {
- position: fixed;
- transform: translateY(1em);
-
+  visibility: hidden;
+  position: fixed;
+  transform: translateY(1em);
 }
