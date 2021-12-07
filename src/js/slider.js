@@ -1,5 +1,3 @@
-// import "slick";
-
 $(document).ready(function () {
   $('.reviews__list').slick({
     slidesToShow: 3,
