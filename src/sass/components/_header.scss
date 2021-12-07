@@ -41,7 +41,7 @@
       transition: background-color var(--animation);
       &:hover,
       &:focus {
-        background-color: var(--primary-text-color);
+        fill: var(--modal-primary-color);
       }
     }
   }
@@ -56,6 +56,9 @@
       fill: var(--hover-color);
     }
   }
+}
+.social-list__item {
+  margin-right: 12px;
 }
 .navigation {
   display: flex;
