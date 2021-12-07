@@ -37,7 +37,7 @@ img {
 
 /* Основные стили страницы */
 
-.container {
+.secton {
   max-width: 320px;
 
   padding-left: 15px;
@@ -48,10 +48,31 @@ img {
 
   @include mq(tablet) {
     max-width: 768px;
+
+    padding-left: 37px;
+    padding-right: 37px;
   }
 
   @include mq(desktop) {
     max-width: 1280px;
+
+    padding-left: 228px;
+    padding-right: 228px;
+  }
+}
+
+.container {
+  min-width: 320px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(tablet) {
+    min-width: 634px;
+  }
+
+  @include mq(desktop) {
+    min-width: 824px;
   }
 }
 

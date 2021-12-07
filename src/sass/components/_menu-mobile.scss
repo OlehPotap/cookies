@@ -65,6 +65,7 @@
   z-index: 1;
 }
 div.scrollup {
+  z-index: 2;
   position: fixed; /* фиксированная позиция */
   color: #fff; /* цвет текста */
   background-color: var(--modal-primary-color); /* цвет заднего фона */
