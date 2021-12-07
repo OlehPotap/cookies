@@ -54,7 +54,7 @@
   text-align: center;
   color: var(--hover-color);
   height: 36px;
-  transform: transform(0em);
+  transform: translateY(0em);
   transition: transform var(--animation);
 
   @include mq(desktop) {
@@ -96,11 +96,13 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    transform: transform(0em);
-    transition: transform var(--animation);
+    transform: translateY(1em); 
+  transition: transform var(--animation);
   }
 }
-.button__is-hidden {
+.about-us__button__is-hidden 
+{
+  visibility: hidden;
   position: fixed;
-  transform: transform(0em);
+  transform: translateY(10em);
 }
