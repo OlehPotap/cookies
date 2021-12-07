@@ -57,6 +57,7 @@
   height: 36px;
   transform: translateY(0em);
   transition: transform var(--animation);
+  z-index: -1;
   
   @include mq(desktop)
   {
