@@ -89,10 +89,7 @@
   }
 }
 
-
-
 .button--read-more {
-  
   font-family: var(--title-font);
   text-align: left;
   font-size: 18px;
@@ -131,9 +128,11 @@
 .card--box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 
   @include mq(tablet-only) {
     width: 298px;
+    justify-content: flex-start;
   }
 
   @include mq(desktop) {
