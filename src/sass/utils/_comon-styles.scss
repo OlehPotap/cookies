@@ -20,10 +20,9 @@ body {
     background-position: top left, bottom right, bottom 216px right, top;
     background-repeat: no-repeat;
     background-size: 117px, 90px, 100%, 100%;
-    background-image: url(../images/png/header/pic-donuts@2x_sm.png) no-repeat top left,
-      url(../images/png/body-bg/wheat_sm@2x.png) no-repeat bottom right,
-      url(../images/png/body-bg/mobile-bot@2x.png) no-repeat bottom 216px right,
-      url(../images/png/body-bg/mobile-top@2x.png) no-repeat top;
+    background-image: url(../images/png/header/pic-donuts@2x_sm.png),
+      url(../images/png/body-bg/wheat_sm@2x.png), url(../images/png/body-bg/mobile-bot@2x.png),
+      url(../images/png/body-bg/mobile-top@2x.png);
   }
 
   @include mq(tablet) {
@@ -65,7 +64,7 @@ body {
         bottom right, bottom, top;
       background-size: 130px, 720px, 200px, 550px, 320px, 100%, 100%;
       background-repeat: no-repeat;
-      background: url(../images/png/body-bg/spoon-1@2x.png),
+      background-image: url(../images/png/body-bg/spoon-1@2x.png),
         url(../images/png/header/pic-donuts_lg.png), url(../images/png/registration/donut@2x_lg.png),
         url(../images/png/registration/kisspng-party@2x_lg.png),
         url(../images/png/body-bg/wheat_lg.png), url(../images/png/body-bg/desktop-bot@2x.png),
